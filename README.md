@@ -1,7 +1,7 @@
 # WebScraping-INRCurrencyConveter
 
-# Simple-Web-Scraper
-# Web scraping tutorials (Python)
+
+
 
 In these tutorials, we will learn to build some simple but useful scrapers from scratch.
 In this we create web scraper INR Currency Converter and we will learn to build some simple but useful INR to Currency Converter Using Python3.In this we see the Real example of [Python Dictionary.](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
