@@ -7,13 +7,8 @@ r = requests.get(URL1, headers=headers)
 
 soup = BeautifulSoup(r.content, "lxml")
 
-# ls = soup.findAll("table",{"class":"ratesTable"})
-# currency = []
-# for list1 in ls:
-#     currency = list1.get_text()
-#     # print(list(currency))
-#     l1 = currency.strip("\n").strip(" ").split("\n")
-#     print(l1)
+
+
 ls = soup.findAll("table", {"class": "moneyweb-currency-table"})
 currency1 = []
 cur = []
@@ -26,6 +21,8 @@ for row in ls:
     key = name+"-"+cur[2:5]
     val = float(cur[8:15])
     currencyDict[key] = val
+    
+# take amount from user
 
 INR = float(input("Enter Amount(INR):"))
 print('\n')
@@ -35,8 +32,7 @@ for item in currencyDict.keys():
 
 print('\n')
 currency = input('Please enter one of them: ')
+# conversion calculation
 print(f"{INR} INR is equal to {INR*currencyDict[currency]} {currency}")
 
-# for row in currency1:
-#     cur = row
-#     print(cur)
+
