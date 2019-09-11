@@ -31,7 +31,7 @@ def livecurrencyexchange():
     print('\n')
     currency = input('Please enter one of them: ')
     #price conversion calculation
-    print(f"{INR} INR is equal to {INR*currencyDict[currency]} {currency}")
+    print(f"{INR} INR is equal to {INR/currencyDict[currency]} {currency}")
     ab = input("You want to more exchanges(Y/N): ")
     if(ab == 'Y' or ab == 'y' or ab == 'YES' or ab == 'Yes' or ab=='yes'):
         print('\n')
