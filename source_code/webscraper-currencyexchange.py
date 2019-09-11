@@ -19,7 +19,7 @@ def livecurrencyexchange():
         cur = currency1[4]
         name = currency1[1]
         key = name+"-"+cur[2:5]
-        val = float(cur[8:15])
+        val = float(cur[8:11])
         currencyDict[key] = val
 # take amount input from user
     INR = float(input("Enter Amount(INR):"))
